@@ -25,7 +25,9 @@ function App() {
 
   return (
     <>
-    <MainTitleContainer><MainTitle>Dog App</MainTitle></MainTitleContainer>
+      <MainTitleContainer>
+        <MainTitle>Dog App</MainTitle>
+      </MainTitleContainer>
       <Main items={data} setCurrentItem={setCurrentItem} />
       {open && <Modal currentItem={currentItem} handleClose={handleClose} />}
     </>

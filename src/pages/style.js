@@ -75,6 +75,9 @@ export const CloseButton = styled.p`
   padding-right: 15px;
   color: rebeccapurple;
   cursor: pointer;
+  @media (min-width: 414px) {
+    padding-right: 55px;
+  }
 `;
 
 export const Title = styled.div`

@@ -3,7 +3,8 @@ import Main from "./pages/Main/main";
 import useFetch from "./api/useFetch";
 import Spinner from "./pages/Spinner/spinner";
 import Modal from "./pages/Modal/modal";
-import { MainTitleContainer, MainTitle } from "./pages/style";
+import Header from "./pages/Header/header";
+
 function App() {
   const [currentItem, setCurrentItem] = useState("");
   const [open, setOpen] = useState(false);
@@ -25,9 +26,7 @@ function App() {
 
   return (
     <>
-      <MainTitleContainer>
-        <MainTitle>Dog App</MainTitle>
-      </MainTitleContainer>
+      <Header />
       <Main items={data} setCurrentItem={setCurrentItem} />
       {open && <Modal currentItem={currentItem} handleClose={handleClose} />}
     </>
